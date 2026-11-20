@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px 50px;
+}
+
+header h2 {
+    color: #FF6B00;
+    font-size: 28px;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 500px;
+
+    background-image: url("images/restaurant-food.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+), url("images/restaurant-food.jpg");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 20px;
+    color:#e6e5e5;
+}
+
+.hero-btn {
+    background-color: #FF6B00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.about h2 {
+    color: #FF6B00;
+    font-size: 32px;
+}
+
+.about p {
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+.menu {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #FFF4E8;
+}
+
+.menu h2 {
+    color: #FF6B00;
+    font-size: 32px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.food-card {
+    background-color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    color: #222222;
+}
+
+.food-card p {
+    color: #666666;
+}
+
+.food-card h4 {
+    color: #FF6B00;
+    font-size: 20px;
+}
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact h2 {
+    color: #FF6B00;
+    font-size: 32px;
+}
+
+.contact p {
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-info {
+    margin-top: 25px;
+}
+.footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer h2 {
+    color: #FF6B00;
+}
+
+.footer p {
+    color: #dddddd;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.social-links a:hover {
+    color: #FF6B00;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-card {
+        width: 85%;
+    }
+
+}
